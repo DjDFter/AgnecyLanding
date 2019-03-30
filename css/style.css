@@ -2,6 +2,7 @@ html,
 body {
 	min-width: 1580px;
 	min-height: 100px;
+	background: #ffffff;
 }
 
 body {
@@ -9,8 +10,28 @@ body {
 	width: 1580px;
 	display: flex;
 	flex-direction: column;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 28px;
 }
 
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+li {
+	list-style: none;
+}
+h2 {
+	text-transform: uppercase;
+	font-size: 42px;
+	font-weight: bold;
+	line-height: 55px;
+	margin: 0;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
 .block {
 	margin: 0;
 	padding: 0;
@@ -18,17 +39,33 @@ body {
 	outline: 1px solid yellow;
 	min-height: 100px;
 }
+
+.button {
+	padding: 20px 65px;
+	background: #ff2d2d;
+	border: none;
+	border-radius: 10px;
+	color: #ffffff;
+}
+.underscore {
+	margin: 0 auto 10px;
+	width: 132px;
+	border: 2px solid #ff2d2d;
+}
 /**========================================================================**/
 .block1 {
 	margin: 0;
+	margin-bottom: 50px;
 	padding: 0;
 	display: flex;
 	flex-direction: column;
+	background: #f6f2f2;
 }
 .main_navigation {
-	margin: 0 auto;
+	margin: 20px auto 20px;
 	padding: 0;
 	outline: 1px solid green;
+	background: #313030;
 	min-height: 90px;
 	width: 1250px;
 }
@@ -40,16 +77,24 @@ body {
 }
 .main_navigation_list .item {
 	margin: 0;
-	padding: 10px 25px;
+	padding: 45px 25px 0;
+	vertical-align: center;
 	outline: 1px solid blue;
-	background: red;
+	height: 45px;
+	text-transform: uppercase;
+	
 }
-
+.main_navigation_list a {
+	color: #e0e0e0;
+}
+.main_navigation_list .selected {
+	background: #ff3f40;
+}
 .content_header {
 	margin: 0 auto;
 	padding: 0;
 	outline: 1px solid green;
-	min-height: 90px;
+	min-height: 360px;
 	width: 1250px;
 	display: flex;
 	justify-content: space-between;
@@ -61,20 +106,34 @@ body {
 	min-height: 100px;
 	width: 600px;
 }
+.content_header h1 {
+	text-transform: uppercase;
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 72px;
+	margin: 0;
+}
+.content_header p {
+	margin-bottom: 50px;
+}	
 .content_header .video {
 	margin: 0;
+	margin-bottom: 20px;
 	padding: 0;
 	outline: 1px solid blue;
 	min-height: 100px;
 	width: 550px;
+	background: url(../img/video.jpg) no-repeat;
 }
 /**========================================================================**/
 .block2 {
 	margin: 0 auto;
+	margin-bottom: 50px;
 	padding: 0;
 	width: 1250px;
 	display: flex;
 	justify-content: space-between;
+	border-bottom: 2px solid #ececec;
 }
 .features_text {
 	margin: 0;
@@ -82,6 +141,15 @@ body {
 	outline: 1px solid green;
 	min-height: 100px;
 	width: 515px
+}
+
+.features_text p {
+	margin-bottom: 50px;
+}
+.button_features {
+	background: #ffffff;
+	border: 2px solid #ff2d2d;
+	color: #ff2d2d;
 }
 .features_list {
 	margin: 0;
@@ -99,6 +167,16 @@ body {
 	outline: 1px solid blue;
 	width: 275px;
 }
+.features_list img {
+	margin: 0;
+}
+.features_list h3 {
+	font-size: 24px;
+	font-weight: 600;
+}
+.features_list p {
+	margin-bottom: 50px;
+}
 /**========================================================================**/
 .block3 {
 	margin: 0 auto;
@@ -112,20 +190,30 @@ body {
 	padding: 0;
 	outline: 1px solid green;
 	min-height: 100px;
+	text-align: center;
+}
+.products_text p {
+	margin-bottom: 35px;
 }
 .products_menu {
 	margin: 0;
+	margin-bottom: 30px;
 	padding: 0;
 	outline: 1px solid green;
-	min-height: 100px;
 	display: flex;
 	justify-content: center;
 }
+.products_menu .selected a{
+	color: #ff2d2d;
+}
 .products_menu .item {
 	margin: 0;
+	margin-right: 10px;
 	padding: 0;
 	outline: 1px solid blue;
 	min-width: 20px;
+	text-transform: uppercase;
+	font-size: 22px;
 }
 .products_list {
 	margin: 0;
@@ -177,15 +265,22 @@ body {
 .about_person {
 	margin: 0;
 	margin-left: 400px;
+	margin-bottom: 30px;
 	padding: 0;
 	outline: 1px solid blue;
 	width: 635px;
 	min-height: 20px;
 }
+.about_person h3 {
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 600;
+}
 .person_social {
 	margin: 0;
 	padding: 0;
 	display: flex;
+	font-style: italic;
 }
 .person_social .item {
 	margin: 0;
@@ -212,10 +307,13 @@ body {
 /**========================================================================**/
 .subscribe {
 	text-align: center;
+	background: #f6f2f2
 }
 /**========================================================================**/
 .feedback {
+	margin: 0 auto;
 	position: relative;
+	width: 1280px;
 }
 .feedback_text {
 	width: 725px;
@@ -228,12 +326,14 @@ body {
 	outline: 1px solid green;
 }
 .contacts {
-	width: 725px;
+	width: 500px;
 	min-height: 160px;
 	outline: 1px solid red;
 	position: absolute;
-	bottom: 0;
+	bottom: 20%;
 	right: 0;
+	background: #2d2d2d;
+	color: #d5d5d5;
 }
 /**========================================================================**/
 .main_footer {
@@ -244,6 +344,8 @@ body {
 	min-height: 100px;
 	display: flex;
 	justify-content: space-around;
+	background: #313030;
+	color: #d5d5d5;
 }
 .social_list {
 	margin: 0;
