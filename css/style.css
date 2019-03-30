@@ -182,6 +182,17 @@ body {
 	width: 635px;
 	min-height: 20px;
 }
+.person_social {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.person_social .item {
+	margin: 0;
+	padding: 0;
+	height: 20px;
+	width: 90px;
+}
 .team_list {
 	margin: 0;
 	margin-left: 400px;
@@ -200,7 +211,7 @@ body {
 }
 /**========================================================================**/
 .subscribe {
-	
+	text-align: center;
 }
 /**========================================================================**/
 .feedback {
